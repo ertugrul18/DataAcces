@@ -1,0 +1,15 @@
+﻿
+Oncelikle yuklenmesi gerekn dotnet tool ile Ef paketini kurulu olmasi gerekiyor
+
+EntityFrameWorkCore icin DbFirst yapilacak ise yuklenmesi gerekn 3 adet paket vardir.
+1- Microsoft.EntityFrameWorkCore
+2- Microsoft.EntityFrameWorkCore.Dizayn
+3- Microsoft.EntityFrameWorkCore.SqlServer
+
+Muhtesem 3'lu paket yuklendikten sonra ancak scaffold yapilabilir
+Verilen ornek komut asagidaki gibi olmalidir
+
+dotnet ef dbcontext scaffold  
+"Server=(localdb)\Mssqllocaldb;Database=Northwind;Trusted_Connection=True" 
+Microsoft.EntityFrameWorkCore.SqlServer 
+-o Entities

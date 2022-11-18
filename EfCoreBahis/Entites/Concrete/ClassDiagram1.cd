@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="EfCoreBahis.Entites.Concrete.BahisCesit">
+    <Position X="9.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACEAAAAAAAAAAAAAAAAAAIABAAAAAAAAAAAAIAAEAA=</HashCode>
+      <FileName>Entites\Concrete\BahisCesit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EfCoreBahis.Entites.Concrete.BahisKonusu">
+    <Position X="6.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAEAAAAQAAAAAAAAEg=</HashCode>
+      <FileName>Entites\Concrete\BahisKonusu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EfCoreBahis.Entites.Concrete.Kasa">
+    <Position X="7.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAAAAAAAAAAAAACBAAAAAAAAAAA=</HashCode>
+      <FileName>Entites\Concrete\Kasa.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EfCoreBahis.Entites.Concrete.KasaHareket">
+    <Position X="0.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAgAAABAAABAAAAAAAAACABBAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Entites\Concrete\KasaHareket.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EfCoreBahis.Entites.Concrete.Oynanan">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEIAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entites\Concrete\Oynanan.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EfCoreBahis.Entites.Concrete.Oynayan">
+    <Position X="5.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entites\Concrete\Oynayan.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="EfCoreBahis.Entites.Concrete.KasaHaraketTipi" Collapsed="true">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Entites\Concrete\KasaHareket.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
