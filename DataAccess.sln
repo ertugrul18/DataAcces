@@ -23,9 +23,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EfCoreDeleting_Related_Data
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EfCore_StoredProcedure", "EfCore_StoredProcedure\EfCore_StoredProcedure.csproj", "{E3C75125-046A-467C-B956-D20C06524C8A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EfCoreSinema", "EfCoreSinema\EfCoreSinema.csproj", "{1EE4D989-8B6D-4E16-8F6A-DBA54B455B6C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EfCoreSinema", "EfCoreSinema\EfCoreSinema.csproj", "{1EE4D989-8B6D-4E16-8F6A-DBA54B455B6C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EfcoreChangeTracker", "EfcoreChangeTracker\EfcoreChangeTracker.csproj", "{9EDC2EFB-A947-4858-941A-1211DF23F3A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EfcoreChangeTracker", "EfcoreChangeTracker\EfcoreChangeTracker.csproj", "{9EDC2EFB-A947-4858-941A-1211DF23F3A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EfCoreQuery", "EfCoreQuery\EfCoreQuery.csproj", "{839C6521-6540-4A1E-A5A6-AD1B663F98BC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +83,10 @@ Global
 		{9EDC2EFB-A947-4858-941A-1211DF23F3A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9EDC2EFB-A947-4858-941A-1211DF23F3A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9EDC2EFB-A947-4858-941A-1211DF23F3A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{839C6521-6540-4A1E-A5A6-AD1B663F98BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{839C6521-6540-4A1E-A5A6-AD1B663F98BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{839C6521-6540-4A1E-A5A6-AD1B663F98BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{839C6521-6540-4A1E-A5A6-AD1B663F98BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
