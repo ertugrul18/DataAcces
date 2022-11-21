@@ -312,6 +312,8 @@ namespace EfCoreQuery
             //{
             //    Console.WriteLine(item.CategoryId + " " + item.Adet);
             //}
+
+
             #endregion
             #endregion
 
