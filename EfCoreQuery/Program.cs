@@ -185,6 +185,136 @@ namespace EfCoreQuery
             #endregion
             #endregion
 
+            #region Diğer Sorgulama Fonksiyonları
+
+            #region Count
+            //Olusturulan sorguların execute edilmesi neticesinde kac adet satirin elde edileceğini
+            //sayisal olarak (int) bize veren fonksiyondur
+
+            //var sonuc = (context.Employees.ToList()).Count();
+            //Console.WriteLine($"Employee Tablosunda {sonuc} adet kayit vardır");
+
+            #endregion
+
+
+            #region LongCount
+            //var sonuc = (context.Employees.ToList()).LongCount();
+            //Console.WriteLine($"Employee Tablosunda {sonuc} adet kayit vardır");
+            #endregion
+
+            #region Any
+            //Sorgu sonucunda verinin gelip gelmediğini bool türünden dönen fonksiyondur
+
+
+            //var sonuc = (context.Employees.ToList()).Any();
+            //Console.WriteLine($"Employee Tablosunda kayit vardır {sonuc}");
+
+
+
+            #endregion
+
+            #region Max,Min
+            //Max verilen kolondaki max değerini getirir
+
+            //var sonuc = (context.Products.Max(p => p.UnitPrice));
+            //Console.WriteLine($"Urunler Tablosunda en pahalı urun : {sonuc}");
+
+            //var sonuc2 = (context.Products.Min(p => p.UnitPrice));
+            //Console.WriteLine($"Urunler Tablosunda en ucuz urun : {sonuc2}");
+
+            #endregion
+
+            #region Distinct
+            //Sorgudaki kayıtları tekilleştirir
+            //var sonuc2 = context.Products.Distinct().ToList();
+            //Console.WriteLine(sonuc2);
+            #endregion
+
+
+            #region Sum
+            //Vermiş olduğumuz sayısal propertynin toplamını alır
+            //var sonuc2 = (context.Products.Sum(p => p.UnitPrice));
+            //Console.WriteLine($"Urunler Tablosunda toplam fiyat: {sonuc2}");
+            #endregion
+
+            #region Avarege
+
+            //var sonuc2 = (context.Products.Average(p => p.UnitPrice));
+            //Console.WriteLine($"Urunler Tablosunda fiyat ortalaması : {sonuc2}");
+            #endregion
+
+            #region Contains
+
+            //context.Products
+            //    .Where(p => p.ProductName.Contains("a"))
+            //    .ToList()
+            //    .ForEach(p => Console.WriteLine(p.ProductName + " " + p.UnitPrice));
+
+            #endregion
+            #region Startwith, EndWith
+
+            // Like "% % " sorgusu olusturmaya yarar 
+
+            //context.Products
+            //    .Where(p => p.ProductName.StartsWith("a"))  // A ile başlayan
+            //    .ToList()
+            //    .ForEach(p => Console.WriteLine(p.ProductName + " " + p.UnitPrice));
+
+            //Console.WriteLine("*****************************");
+
+            //context.Products
+            //    .Where(p => p.ProductName.EndsWith("a"))  // A ile biten
+            //    .ToList()
+            //    .ForEach(p => Console.WriteLine(p.ProductName + " " + p.UnitPrice));
+            #endregion
+
+            #region Select
+            //Select metodu generate edilecek sorgunun cekilecek kolonlarını ayarlamanıza yarar
+            //Tek kolon secilecekse
+            //var urunler = context.Products.Select(p => p.ProductName).ToList();
+
+            ////Birden fazka kolon secilecek ise
+            //context.Products.Select(p => new
+            //{ p.ProductId, p.ProductName, p.UnitPrice })
+            //   .ToList().ForEach(p =>
+            //   Console.WriteLine(p.ProductId + " " + p.ProductName + " " + p.UnitPrice));
+
+            #endregion
+
+            #region Group By
+            // Gruplama yapmaya yarar
+
+            //Metod Syntax
+            //var urunler = context.Products.GroupBy(p => p.CategoryId).Select(group => new
+            //{
+            //    CategoryId = group.Key,
+            //    count = group.Count(),
+
+            //})
+            //    .ToList();
+
+            //foreach (var item in urunler)
+            //{
+            //    Console.WriteLine(item.CategoryId + " " + item.count);
+            //}
+
+
+            //Query Syntax
+            //var data = (from urun in context.Products
+            //            group urun by urun.CategoryId
+            //           into @group
+            //            select new
+            //            {
+            //                CategoryId = @group.Key,
+            //                Adet = @group.Count()
+            //            }).ToList();
+            //foreach (var item in data)
+            //{
+            //    Console.WriteLine(item.CategoryId + " " + item.Adet);
+            //}
+            #endregion
+            #endregion
+
         }
     }
 }
