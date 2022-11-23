@@ -283,22 +283,22 @@ namespace EfCore_RelatedData
             #region Urunlerin Satis Adetleri Ve Cirolari nedir
 
 
-            var urunler = context.Products.Include(p => p.OrderDetails).ToList();
-            decimal ciro = 0;
-            decimal adet = 0;
+            //var urunler = context.Products.Include(p => p.OrderDetails).ToList();
+            //decimal ciro = 0;
+            //decimal adet = 0;
 
-            foreach (var item in urunler)
-            {
-                foreach (var item2 in item.OrderDetails)
-                {
-                    ciro += (item2.UnitPrice * item2.Quantity);
-                    adet += item2.Quantity;
-                }
-                Console.WriteLine("Urunlerin Satıs adetleri ve ciroları  " + item.ProductName);
-                Console.WriteLine("Ciro " + ciro + " " + "Adet " + adet);
-                ciro = 0;
-                adet = 0;
-            }
+            //foreach (var item in urunler)
+            //{
+            //    foreach (var item2 in item.OrderDetails)
+            //    {
+            //        ciro += (item2.UnitPrice * item2.Quantity);
+            //        adet += item2.Quantity;
+            //    }
+            //    Console.WriteLine("Urunlerin Satıs adetleri ve ciroları  " + item.ProductName);
+            //    Console.WriteLine("Ciro " + ciro + " " + "Adet " + adet);
+            //    ciro = 0;
+            //    adet = 0;
+            //}
 
             #endregion
 
