@@ -218,11 +218,11 @@ namespace EfCore_RelatedDataSave
             //context.SaveChanges();
 
 
-            Blog? blog = context.Bloglar.Include(p => p.Posts).FirstOrDefault(p => p.Id == 2);
+            //Blog? blog = context.Bloglar.Include(p => p.Posts).FirstOrDefault(p => p.Id == 2);
             
-            context.Bloglar.Remove(blog);
+            //context.Bloglar.Remove(blog);
 
-            context.SaveChanges();
+            //context.SaveChanges();
 
             #endregion
 
